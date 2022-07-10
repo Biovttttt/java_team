@@ -18,9 +18,6 @@ public class JsonCarInfo {
     public JsonCarInfo() {
 
     }
-
-
-
     public int getId() {
         return id;
     }
@@ -68,16 +65,6 @@ public class JsonCarInfo {
                 System.out.println("error");
             }
 
-
-//            try(FileReader fileReader=new FileReader("jsonCar.json")) {
-//                Scanner sc=new Scanner(fileReader);
-//                while (sc.hasNextLine()){
-//                    System.out.println(sc.nextLine());
-//                }
-//
-//            } catch (IOException e) {
-//                throw new RuntimeException(e);
-//            }
         }
     }
 

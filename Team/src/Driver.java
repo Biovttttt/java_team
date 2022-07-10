@@ -5,9 +5,6 @@ import java.io.IOException;
 
 public class Driver {
 
-
-    //public static final Path WRITE_PATH= Paths.get("jsonCar.json");
-
     private int id;
     private String driverName;
     private Status status =null;
@@ -68,15 +65,5 @@ public class Driver {
             System.out.println("error");
         }
 
-
-//        try(FileReader fileReader=new FileReader("jsonDriver.json")) {
-//            Scanner sc=new Scanner(fileReader);
-//            while (sc.hasNextLine()){
-//                System.out.println(sc.nextLine());
-//            }
-//
-//        } catch (IOException e) {
-//            throw new RuntimeException(e);
-//        }
     }
 }
