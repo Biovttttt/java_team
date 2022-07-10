@@ -8,3 +8,4 @@ public interface Service {
     void startRepair(List<JsonCarInfo> jsonCarInfo, int id_truck);
 
 }
+

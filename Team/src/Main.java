@@ -50,7 +50,7 @@ public class Main {
                     "2   StartDriving \n" +
                     "3   StartRepair \n" +
                     "4   Information ");
-
+            try {
                 int scanner_id = scanner.nextInt();
                 switch (scanner_id){
                     case 1:
@@ -82,6 +82,14 @@ public class Main {
                             System.err.println("id с таким грузовиком  не сущетсвует!!!");
                         }
                 }
+            }catch (Exception e){
+                System.err.println("Введите только цифры от 0-2");
+                main(args);
+            }
+
+
+
+
 
 
         }
