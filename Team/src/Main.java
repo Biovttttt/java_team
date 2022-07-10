@@ -30,6 +30,6 @@ public class Main {
         System.out.println("---------------------------");
         String carJson = GSON.toJson(drivers);
         Driver.getDriverJson(carJson);
-        System.out.println("=========================");
+
     }
 }
