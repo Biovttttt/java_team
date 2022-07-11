@@ -14,15 +14,15 @@ public class Main {
         Scanner scanner=new Scanner(System.in);
         Station station=new Station();
         List<JsonCarInfo> car=new ArrayList<>(Arrays.asList(
-                new JsonCarInfo(1,"Renault","",Status.BASE),
-                new JsonCarInfo(2,"Toyota ","",Status.BASE),
-                new JsonCarInfo(3,"Subaru ","",Status.BASE)
+                new JsonCarInfo(0,"Renault","",Status.BASE),
+                new JsonCarInfo(1,"Toyota ","",Status.BASE),
+                new JsonCarInfo(2,"Subaru ","",Status.BASE)
         ));
 
         List<Driver> drivers = new ArrayList<>(Arrays.asList(
-                new Driver(1,"Petr", null),
-                new Driver(2,"Ivan", null),
-                new Driver(3,"Ulan", null)
+                new Driver(0,"Petr", null),
+                new Driver(1,"Ivan", null),
+                new Driver(2,"Ulan", null)
         ));
 
         String json=GSON.toJson(car);
@@ -86,12 +86,6 @@ public class Main {
                 System.err.println("Введите только цифры от 0-2");
                 main(args);
             }
-
-
-
-
-
-
         }
     }
 }
